@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Restaurants Finland</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Student Restaurants Finland</h1>
+    <p>Find restaurants and check daily or weekly menus</p>
+  </header>
+
+  <main>
+
+    <section class="filter-section">
+      <label for="cityFilter">Filter by city:</label>
+
+      <select id="cityFilter">
+        <option value="all">All cities</option>
+      </select>
+    </section>
+
+    <section class="layout">
+
+      <div class="restaurants">
+        <h2>Restaurants</h2>
+        <div id="restaurantList">
+          <p>Loading restaurants...</p>
+        </div>
+      </div>
+
+      <div class="menu">
+        <h2 id="restaurantName">Select a restaurant</h2>
+
+        <div class="buttons">
+          <button id="dailyBtn">Daily Menu</button>
+          <button id="weeklyBtn">Weekly Menu</button>
+        </div>
+
+        <div id="menuContainer">
+          <p>Select a restaurant to view menu.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>TX00EY23 Web Application Development</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

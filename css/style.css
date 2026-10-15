@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+header {
+  background-color: #176b87;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.filter-section {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+select {
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.restaurants,
+.menu {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.restaurant-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.restaurant-card:hover {
+  background-color: #eaf6f8;
+}
+
+.restaurant-card h3 {
+  margin-top: 0;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #176b87;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #12536a;
+}
+
+.menu-item {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  select {
+    display: block;
+    width: 100%;
+    margin: 10px 0 0;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+}
+
+.favorite-btn {
+  margin-top: 10px;
+  background-color: #444;
+}
+
+.favorite-btn:hover {
+  background-color: #222;
+}
